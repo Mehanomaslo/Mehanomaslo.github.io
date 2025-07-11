@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <!-- Подключаем стили Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Угланский машиностроительный завод</title>
+</head>
+
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="header__backgroundbox">
+                <img src="images/header/background.png" alt="background" class="header__background">
+            </div>
+            <div class="container">
+                <nav class="header__navigation">
+                    <div class="header__logo">
+                        <img src="images/header/logo.png" alt="logotip" class="header__img-logo">
+                    </div>
+                    <div class="header__community">
+                        <h1 class="header__title"> УМЗ PRO</h1>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="page.html" class="menu__link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="catalog.html" class="menu__link">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="services.html" class="menu__link">Услуги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#popup" class="menu__link popup-link">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#info" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="burger">
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                        </div>
+                        <nav class="menu__phone">
+                            <ul class="menu--phone">
+                                <li class="menu__item--phone">
+                                    <a href="page.html" class="menu__link--phone">Главная</a>
+                                </li>
+                                <li class="menu__item--phone">
+                                    <a href="catalog.html" class="menu__link--phone">Каталог</a>
+                                </li>
+                                <li class="menu__item--phone">
+                                    <a href="services.html" class="menu__link--phone">Услуги</a>
+                                </li>
+                                <li class="menu__item--phone">
+                                    <a href="#popup" class="menu__link--phone popup-link">О нас</a>
+                                </li>
+                                <li class="menu__item--phone">
+                                    <a href="#info" class="menu__link--phone">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- main -->
+        <main class="main">
+            <!-- about -->
+            <section class="about">
+                <div class="container">
+                    <div class="about__wrapper">
+                        <div class="about__body">
+                            <h2 class="about__title">Внедряем новые технологии в многолетний опыт</h2>
+                        </div>
+                        <div class="about__logobox"><img src="images/page/about/logo_about.png" alt="logotip"
+                                class="about__logo">
+                            <div class="about__imagebox">
+                                <img src="images/page/about/background_logo.png" alt="background" class="about__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services -->
+            <section class="services">
+                <div class="container">
+                    <div class="services__cardbox">
+                        <a href="catalog.html" class="services__card opacity--5">
+                            <img src="images/page/services/1.png" alt="background" class="services__background">
+                            <p class="services__text">Каталог</p>
+                        </a>
+                        <a href="catalog.html" class="services__card opacity--7">
+                            <img src="images/page/services/2.png" alt="background" class="services__background">
+                            <p class="services__text">Услуги</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- info -->
+            <section class="info" id="info">
+                <div class="container">
+                    <div class="info__box">
+                        <ul class="info__item info__item--wtite">
+                            <li class="info__text info__text--write">
+                                <p>Пишите</p>
+                            </li>
+                            <li class="info__content">
+                                <a href="mailto:umz_pro@mail.ru" class="info__link">umz_pro@mail.ru</a>
+                            </li>
+                        </ul>
+                        <div class="info__main">
+                            <h3 class="info__title">Больше информации</h3>
+                        </div>
+                        <ul class="info__item info__item--call">
+                            <li class="info__text info__text--call">
+                                <p>Звоните</p>
+                            </li>
+                            <li class="info__content">
+                                <a href="tel:+79525565136" class="info__link">+7-952-556-51-36</a>
+                                <a href="tel:+79507788380" class="info__link">+7-950-778-83-80</a>
+                                <a href="tel:+79507737334" class="info__link">+7-950-773-73-34</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- preview -->
+            <section class="preview">
+                <div class="container">
+                    <a href="#popup" class="preview__wrapper popup-link">
+                        <h2 class="preview__title">О заводе</h2>
+                        <!-- Контейнер слайдера -->
+                        <div class="swiper-container swiper-container__preview">
+                            <!-- Внутренний контейнер -->
+                            <div class="swiper-wrapper swiper-wrapper__preview">
+                                <!-- Отдельные слайды -->
+                                <div class="swiper-slide swiper-slide__preview">
+                                    <img src="images/page/preview/1.jpeg" alt="background" class="preview__background">
+                                </div>
+                                <div class="swiper-slide swiper-slide__preview">
+                                    <img src="images/page/preview/2.jpeg" alt="background" class="preview__background">
+                                </div>
+                                <div class="swiper-slide swiper-slide__preview">
+                                    <img src="images/page/preview/3.jpeg" alt="background" class="preview__background">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- page-catalog -->
+            <section class="page-catalog">
+                <div class="container">
+                    <div class="catalog__cardbox">
+                        <div class="catalog__card">
+                            <div class="catalog__imgbox-card">
+                                <img src="images/page/page-catalog/1.png" alt="image" class="catalog__img-card">
+                            </div>
+                            <div class="catalog__titlebox-card">
+                                <h3 class="catalog__title-card">Насос КО 510</h3>
+                            </div>
+                        </div>
+                        <div class="catalog__card">
+                            <div class="catalog__imgbox-card">
+                                <img src="images/page/page-catalog/2.png" alt="image" class="catalog__img-card">
+                            </div>
+                            <div class="catalog__titlebox-card">
+                                <h3 class="catalog__title-card">Насос КО 503</h3>
+                            </div>
+                        </div>
+                        <div class="catalog__card">
+                            <div class="catalog__imgbox-card">
+                                <img src="images/page/page-catalog/3.png" alt="image" class="catalog__img-card">
+                            </div>
+                            <div class="catalog__titlebox-card">
+                                <h3 class="catalog__title-card">Вакуумные цистерны</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <p class="footer__address">Воронежская область, Верхнехавский район, с. Углянец</p>
+                    <nav class="footer__listbox">
+                        <ul class="footer__list">
+                            <li class="footer__item-list">
+                                <a href="tel:+79525565136" class="footer__link-list">+7-952-556-51-36</a>
+                            </li>
+                            <li class="footer__item-list">
+                                <a href="tel:+79507737334" class="footer__link-list">+7-950-773-73-34</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item-list">
+                                <a href="tel:+79507788380" class="footer__link-list">+7-950-778-83-80</a>
+                            </li>
+                            <li class="footer__item-list">
+                                <a href="mailto:umz_pro@mail.ru" class="footer__link-list">umz_pro@mail.ru</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!-- popup -->
+        <section class="page__popup popup" id="popup">
+            <div class="container">
+                <div class="popup__wrapper">
+                    <div class="popup__body popup__content">
+                        <div class="popup__imgbox">
+                            <img src="images/popup/bg.png" alt="background" class="popup__img">
+                        </div>
+                        <h2 class="popup__title">Приветствуем вас!</h2>
+                        <span class="popup__close close-popup">X</span>
+                        <ul class="popup__list">
+                            <li class="popup__item-list">
+                                <p class="popip__text-list">
+                                    Углянский машиностроительный завод – «молодое предприятие с богатой историей».
+                                </p>
+                            </li>
+                            <li class="popup__item-list">
+                                <p class="popip__text-list">
+                                    Первые транспортные средства были оснащены вакуумными цистернами основателем завода
+                                    Ремизовым Евгением Владимировичем в 2009 году. <br>
+                                    Качество услуг по установке цистерн и оборудования с годами позволило нарастить
+                                    мощности, заручиться поддержкой партнеров и доверием заказчиков.
+                                </p>
+                            </li>
+                            <li class="popup__item-list">
+                                <p class="popip__text-list">
+                                    География предоставления услуг сегодня распространяется на территорию всей
+                                    европейской
+                                    части России
+                                    благодаря положительным отзывам и рекомендациям наших клиентов, которым мы
+                                    бесконечно
+                                    признательны за доверие!
+                                </p>
+                            </li>
+                            <li class="popup__item-list">
+                                <p class="popip__text-list">
+                                    В настоящее время основание завода УМЗ PRO – это внедрение новых технологий в
+                                    многолетний опыт работы, реализация новых проектов и расширение спектра
+                                    предоставляемых
+                                    услуг.
+                                </p>
+                            </li>
+                            <li class="popup__item-list">
+                                <p class="popip__text-list">
+                                    Предлагаем ознакомиться с каталогами товаров и услуг УМЗ PRO.
+                                    Уверены, что сотрудничество станет долгосрочным и плодотворным!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Скрипты библиотеки Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
